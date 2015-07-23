@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TapIt</string>
+    <string name="activity_name">TapIt</string>
+
+    <!-- Msg -->
+    <string name="billing_success">Thanks for your donation!</string>
+    <string name="card_read">Card read</string>
+    <string name="card_reading">Reading in progress&#8230;</string>
+    <string name="card_deleted">Card data deleted</string>
+    <string name="card_reading_desc">Please do not remove or move card during reading.</string>
+    <string name="nfc_locked">NFC is locked on your card</string>
+    <string name="msg_nfc_disable">Please enable NFC and press back to return to this application.</string>
+    <string name="msg_activate_nfc">OK</string>
+    <string name="msg_info">Info</string>
+    <string name="donate_banner">Help us to improve this app, donate !</string>
+
+    <!-- Error -->
+    <string name="error_communication_nfc">Please do not move card, try again !</string>
+    <string name="error_card_unknown">Unknown EMV card (Please send logs)</string>
+    <string name="error_link">No web browser found</string>
+    <string name="error_email">No email client found</string>
+
+    <!-- Tabs -->
+    <string name="viewpager_carddetail">Card detail</string>
+    <string name="viewpager_transactions">Transactions</string>
+    <string name="viewpager_log">Log</string>
+
+    <!-- Card Detail -->
+    <string name="paycard_back_text">Please put the NFC creditcard or phone to the back of the phone</string>
+    <string name="extended_card_detail_title">Extended card details</string>
+    <string name="card_representation_title">Card Representation</string>
+
+    <string name="extended_title_AID">Card AID :</string>
+    <string name="extended_title_application_label">Application :</string>
+    <string name="extended_title_pin_try">Pin try left :</string>
+    <string name="extended_title_card_type">Card type :</string>
+    <string name="extended_card_holder_name">Holder name :</string>
+    <string name="extended_title_possible_bank">Card issuer :\n(possible)</string>
+    <string name="extended_title_times">Time(s)</string>
+
+    <!-- Transaction -->
+    <string name="transaction_empty">Your card doesn\'t provided\ntransaction history</string>
+
+    <!-- Transaction detail -->
+    <string name="transaction_type">Transaction type :</string>
+    <string name="transaction_cryptogram">Cryptogram :</string>
+    <string name="transaction_country">Terminal Country :</string>
+    <string name="transaction_unknown">Unknown</string>
+
+    <!-- Transaction type -->
+    <string name="transaction_type_0">Purchase</string>
+    <string name="transaction_type_1">Cash advance</string>
+    <string name="transaction_type_9">Cash back</string>
+    <string name="transaction_type_32">Refund</string>
+
+    <!-- Logs -->
+    <string name="mail_subject">[EMV Reader] Log report</string>
+    <string name="mail_popup_title">Send log by mail...</string>
+    <string name="mail_to">android@julien-millau.fr</string>
+
+
+    <!-- About -->
+    <string name="about_app_detail">This app is created to whom that wants to have and get secure payments on your mobile phone</string>
+    <string name="about_source_detail">Source Code and documentation available on <a href="https://github.com/devnied/EMV-NFC-Paycard-Enrollment">Github</a>. Application written by <a href="http://julien-millau.fr">Julien Millau</a></string>
+    <string name="about_inapp_text"> We are an organization of people who want people to have and get easy payments when ever you want!</string>
+    <string name="about_title">About Tap It</string>
+    <string name="about_inApp">About us</string>
+    <string name="about_contact_info">Contact us</string>
+    <string name="about_full_contact">
+        Its possible to contact us by email help@tapit.com or phone: 123456 </string>
+
+    <!-- Navigation drawable -->
+    <string name="navigation_menu_open">Navigation menu open</string>
+    <string name="navigation_menu_close">Navigation menu close</string>
+    <string-array name="navigation_items">
+
+        <!-- <item>Lesari</item> -->
+        <item>Smart payment</item>
+
+        <item>Infortory list</item>
+        <item>Create infortory</item>
+        <item>Fundraisers</item>
+        <item>About us</item>
+        <item>Sign out</item>
+    </string-array>
+
+    <!-- Preferences -->
+    <string name="general_category">General Preferences</string>
+    <string name="pref_save_read_card">Save card</string>
+    <string name="pref_sum_save_card">Save detail on file system</string>
+    <string name="pref_remove_all_stored_cards">Remove stored data</string>
+
+    <!--  Strings for possible PreferenceActivity Back/Next buttons -->
+    <string name="back_button_label">Back</string>
+    <string name="next_button_label">Next</string>
+
+    <!-- Optional button to Skip a PreferenceActivity [CHAR LIMIT=20] -->
+    <string name="skip_button_label">Skip</string>
+
+
+
+    <!-- vAppið -->
+    <string name="hello_world">Hello world!</string>
+    <string name="button_login">Sign in</string>
+    <string name="button_register">Register</string>
+    <string name="title_activity_register_user">Registering</string>
+    <string name="label_name">Name:</string>
+    <string name="label_ssid">SSID:</string>
+    <string name="label_phone">Phone:</string>
+    <string name="label_email">Email:</string>
+    <string name="label_bankinfo">Banking information.:</string>
+    <string name="label_pass">Password:</string>
+    <string name="label_passconfirmed">Password confirmed:</string>
+    <string name="label_choosepass">Choose 6 letter/number password</string>
+    <string name="button_registration">Registration</string>
+    <string name="title_activity_login">Log In</string>
+    <string name="example_email">john@example.com</string>
+    <string name="title_activity_main_menu">Main Menu</string>
+    <string name="button_sell">Sell</string>
+    <string name="title_activity_add_to_cart">Add to Cart</string>
+    <string name="button_addtocart">Add to card</string>
+    <string name="button_pay">Pay!</string>
+    <string name="title_activity_pay">Payment</string>
+    <string name="button_scancard">Scan card</string>
+    <string name="button_entercardinfo">Or enter card info</string>
+    <string name="button_back">Back</string>
+    <string name="title_activity_manual_pay_by_card">Card Info</string>
+    <string name="radio_credit">Credit card</string>
+    <string name="radio_debit">Debit card</string>
+    <string name="label_cardholdername">Name:</string>
+    <string name="label_cardnumber">Card number:</string>
+    <string name="label_expirationdate">Expiration date:</string>
+    <string name="label_cvc">CVC:</string>
+    <string name="button_pay_manual">Pay!</string>
+    <string name="label_checkaccountnumber">Cheque number:</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="username">User name:</string>
+    <string name="password">Password:</string>
+    <string name="login">Sign in</string>
+    <string name="cancel">Cancel</string>
+    <string name="register">Sign up</string>
+    <string name="dialog_login_title">Sign in</string>
+    <string name="title_simple_pay">Simple Pay Activity</string>
+    <string name="text_total">Total: 0</string>
+
+    <string name="text_qty">Amount:</string>
+    <string name="button_minus">-</string>
+    <string name="button_plus">+</string>
+    <string name="hint_amount">Price:</string>
+    <string name="button_delete">Erase</string>
+    <string name="hint_search">Search</string>
+    <string name="gera_aftur">Again!</string>
+    <string name="kvittun">Receipt?</string>
+    <string name="write_code">Enter a code</string>
+
+    <string name="button_send_receipt">Send a receipt</string>
+</resources>

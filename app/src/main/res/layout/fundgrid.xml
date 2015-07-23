@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fundraisers"
+                android:gravity="center_horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="15dp"
+                android:textColor="#000000"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pick a fundraiser"
+                android:background="#FFFFFF"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="2"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            android:background="#FFFFFF">
+        </GridView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bottom_control_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/button_search"
+            android:text="Sign out of fundraiser"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:onClick="goPay"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/buttondrawablered"
+            />
+        <!--<Button
+            android:id="@+id/button_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Hætta í fjáröflun"
+            android:textColor="#000000"
+            android:background="@color/red_danger" />-->
+    </LinearLayout>
+
+</RelativeLayout>

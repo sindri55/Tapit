@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/save_list"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create infortory"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name of product:"
+                    android:layout_weight="0"/>
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price of product:"
+                    android:layout_weight="0"/>
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_add_to_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to infortory list"
+                android:background="@color/valitor_orange"
+                android:layout_gravity="right"
+                android:onClick="addToList"/>
+
+            <!-- android:id="@android:id/list" -->
+            <ListView
+                android:id="@+id/create_inventory_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+            <Button android:id="@id/save_list"
+                android:text="Save"
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:onClick="saveList"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+
+                android:background="@drawable/buttonshapeorange"
+                android:layout_alignParentBottom="true"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- The navigation drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:background="#333"
+            android:choiceMode="singleChoice"
+            android:divider="#666"
+            android:dividerHeight="1dp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" />
+    </android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_back_black">#333</color>
+    <color name="menu_back_selected">#666</color>
+
+
+    <!-- Material color -->
+    <color name="black_error">#ff616161</color>
+    <color name="green_success">#ff43cc0b</color>
+    <color name="red_danger">#ffec001b</color>
+
+
+
+    <!-- Blue -->
+    <color name="blue">#03a9f4</color>
+    <color name="light_blue">#b3e5fc</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="valitor_blue">#6191A9</color>
+    <color name="valitor_orange">#ED6316</color>
+    <color name="valitor_lightorange">#ffed7d36</color>
+    <color name="buttonNumberWhite">#ffb3adaa</color>
+    <color name="button_red">#ffec001b</color>
+    <color name="main_background_color">#ffc5d3f5</color>
+
+    <color name="buyerBlue">#ff1370a9</color>
+    <color name="sellerOrange">#ED6316</color>
+    <color name="organizationGreen">#ff41a014</color>
+
+
+</resources>

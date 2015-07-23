@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!-- The navigation drawer -->
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/edit_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_search"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+
+            <ListView
+                android:id="@+id/inventory_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30dp"
+                android:text="@string/text_total"/>
+            <Button
+                android:text="@string/button_pay"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:onClick="goPay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonshapeorange"
+                android:layout_alignParentBottom="true"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="70dp"
+            >
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gridView1"
+                android:numColumns="3"
+                android:gravity="center"
+                android:stretchMode="columnWidth"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            </GridView>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- The navigation drawer -->
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#333"
+            android:choiceMode="singleChoice"
+            android:divider="#666"
+            android:dividerHeight="1dp"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp" />
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+</RelativeLayout>
